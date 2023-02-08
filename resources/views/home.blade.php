@@ -9,12 +9,14 @@
             <div class="comics-container container">
                 <div class="row">
                     @foreach ($comics as $comic)
-                    <div class="col-2">
-                        <div class="my-card">
-                            <img src="{{$comic['thumb']}}" alt="comic image">
-                            <p>{{$comic['title']}}</p>
+                        <div class="col-2">
+                            <a href="{{route('comic')}}">
+                                <div class="my-card">
+                                    <img src="{{$comic['thumb']}}" alt="comic image">
+                                    <p>{{$comic['title']}}</p>
+                                </div>
+                            </a>
                         </div>
-                    </div>
                     @endforeach
                 </div>
             </div>
