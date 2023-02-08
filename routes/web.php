@@ -19,5 +19,6 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/comic', function () {
-    return view('comic');
+    $comics = config('comics');
+    return view('comic', compact("comics"));
 })->name('comic');
