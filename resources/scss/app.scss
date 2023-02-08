@@ -1,5 +1,11 @@
 @import '~bootstrap/scss/bootstrap';
 
+#jumbotron{
+    height: 380px;
+    background-image: url(../assets/images/jumbotron.jpg);
+    background-size: 100%;
+}
+
 footer{
     padding: 40px 0;
     color: white;
