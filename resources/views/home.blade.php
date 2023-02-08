@@ -6,6 +6,18 @@
             <div class="col-12">
                 <p>current series</p>
             </div>
+            <div class="comics-container container">
+                <div class="row">
+                    @foreach ($comics as $comic)
+                    <div class="col-2">
+                        <div class="my-card">
+                            <img src="{{$comic['thumb']}}" alt="comic image">
+                            <p>{{$comic['title']}}</p>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
         </div>
     </div>
 @endsection
